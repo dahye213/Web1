@@ -1,0 +1,46 @@
+<!--Contents of 'Home' page-->
+<% if (title == "Home"){ %>  
+<section>
+    <h1 class="display-4 text-center" id="home_title">Welcome to my <%= title%> page</h1>
+
+    <p id="home_content">
+        
+        My missions are: 
+        <ul>
+            <li>To be a motive and creative programmer</li>
+            <li>To have good time management skills</li>
+            <li>To work well independently and also cooperatively within a team environment</li>
+        </ul>   
+    </p>
+</section>
+<% } %> 
+<!--Contents of 'About Me' page-->
+<% if (title == "About Me"){ %>  
+    <section>
+        <h1 class="display-4 text-center" id="about_title">Let's talk about me!</h1>
+        <img src="Assets/images/IMG_1970.jpg" width="270px" height="360px" alt="me">
+        <p id="aboutMe_content">
+            
+            Hello, My name is Dahye Lee from Seoul, South Korea. <br>
+            I am currently in Software Engineering Technology program at Centennial College.<br>
+            I would like to introduce my self as a creative and active person who enjoys new challenges!<Br>
+            I am confident with my skills Object-oriented software design methodology, user-oriented interface design, C#, Java, Oracle, Ms-SQL Server, UNIX/Linux, HTML5/CSS/JavaScript
+        </p >
+
+        <a href="Assets/images/Dahye Lee_301128334_Resume_v1.pdf">Resume</a>
+        
+    </section>
+    <% } %> 
+
+<!--Contents of 'Projects' page-->
+<% if (title == "Projects"){ %>  
+    <section>
+        <h1 class="display-4 text-center" id="projects_title">Academic Projects</h1>
+        
+        <img src="Assets/images/Portfolio1.png" width="400px" height="300px">
+        
+        <img src="Assets/images/Portfolio2.png" width="400px" height="300px">
+
+    </section>
+    <% } %> 
+
