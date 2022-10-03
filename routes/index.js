@@ -31,6 +31,7 @@ router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact Me'}); 
 });
 
+/* Redirect to Homepage by capturing the information*/
 router.post("/contact", function (req, res) {
   res.redirect("https://comp229-dahyelee.herokuapp.com/home");
   response = {
