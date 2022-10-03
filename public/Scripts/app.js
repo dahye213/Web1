@@ -6,6 +6,4 @@
     }
     window.addEventListener("load", Start);
 
-
-
 })()

@@ -31,4 +31,18 @@ router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact Me'}); 
 });
 
+router.post("/contact", function (req, res) {
+  res.redirect("127.0.0.1:3000/home");
+  response = {
+    fname: req.query.fname,
+    lname: req.query.lname,
+    email: req.query.email,
+    phoneNumber: req.query.phoneNumber,
+    txtMessage: req.query.txtMessage
+  };
+
+  console.log(response);
+  res.end(JSON.stringify(response));
+ 
+});
 module.exports = router;
