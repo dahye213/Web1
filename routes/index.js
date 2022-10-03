@@ -32,7 +32,7 @@ router.get('/contact', function(req, res, next) {
 });
 
 router.post("/contact", function (req, res) {
-  res.redirect("127.0.0.1:3000/home");
+  res.redirect("https://comp229-dahyelee.herokuapp.com/home");
   response = {
     fname: req.query.fname,
     lname: req.query.lname,
